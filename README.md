@@ -1,5 +1,5 @@
 <div id="top">
-<h1 align="center">Efficient Water Quality Analysis & Prediction 🧑‍⚕️</h1>
+<h1 align="center">Efficient Water Quality Analysis & Prediction </h1>
   <br>
 
 
