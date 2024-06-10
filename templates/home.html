@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="../static/styles/stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form method="post" action="/index" enctype="multipart/form-data">
+                <h1>Water Quality Prediction</h1>
+                <div class="input-row">
+                    <input type="text" name="ph value" id="phvalue" placeholder="ph value (0 to 14)" required>
+                    <input type="text" name="Hardness" id="Hardness" placeholder="Hardness (mg/L)" required>
+                </div>
+                <div class="input-row">
+                    <input type="text" name="Solids" id="Solids" placeholder="Solids (ppm)" required>
+                    <input type="text" name="Chloramines" id="Chloramines" placeholder="Chloramines (ppm)" required>
+                </div>
+                <div class="input-row">
+                    <input type="text" name="Sulfate" id="Sulfate" placeholder="Sulfate (mg/L)" required>
+                    <input type="text" name="Conductivity" id="Conductivity" placeholder="Conductivity (uS/cm)" required>
+                </div>
+                <div class="input-row">
+                    <input type="text" name="Organic carbon" id="Organic carbon" placeholder="Organic carbon (ppm)" required>
+                    <input type="text" name="Trihalomethanes" id="Trihalomethanes" placeholder="Trihalomethanes (ug/L)" required>
+                </div>
+                <input type="text" name="Turbidity" id="Turbidity" placeholder="Turbidity (NTU)" required>
+                <center><input class="btns" type="submit" name="submit_button" value="PREDICT"></center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

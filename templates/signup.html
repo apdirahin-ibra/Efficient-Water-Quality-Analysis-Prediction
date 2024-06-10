@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Quality Index Prediction | Sign Up</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #e0f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .signup-image {
+      background: url("../static/images/wat.jpg") no-repeat center center;
+      background-size: contain;
+      flex: 1;
+      height: 100%;
+      min-height: 400px;
+    }
+
+    .signup-form {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .signup-form h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #025ea4;
+      margin-bottom: 30px;
+    }
+
+    .signup-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .signup-form .btn {
+      background-color: #025ea4;
+      color: white;
+      font-size: 16px;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .signup-form .btn:hover {
+      background-color: #025ea4;
+    }
+
+    .signup-form a {
+      color: #025ea4;
+    }
+
+    .additional-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .password-wrapper {
+      position: relative;
+    }
+
+    .password-wrapper .toggle-password {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="signup-image"></div>
+    <div class="signup-form">
+      <h2>Get Started</h2>
+      <form method="post" action="{{ url_for('signup') }}">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Name" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Username" class="form-control" id="username" required>
+        </div>
+        <div class="form-group password-wrapper">
+          <input type="password" name="password" placeholder="Password" class="form-control" id="password" required>
+          <span class="toggle-password" onclick="togglePasswordVisibility()">
+            <i class="bi bi-eye-slash" id="togglePasswordIcon"></i>
+          </span>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <div class="additional-links">
+        <p>Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <script>
+    function togglePasswordVisibility() {
+      const passwordInput = document.getElementById('password');
+      const togglePasswordIcon = document.getElementById('togglePasswordIcon');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        togglePasswordIcon.classList.remove('bi-eye-slash');
+        togglePasswordIcon.classList.add('bi-eye');
+      } else {
+        passwordInput.type = 'password';
+        togglePasswordIcon.classList.remove('bi-eye');
+        togglePasswordIcon.classList.add('bi-eye-slash');
+      }
+    }
+  </script>
+</body>
+</html>

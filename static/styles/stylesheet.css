@@ -1,0 +1,85 @@
+body {
+  background-image: url("22.jpg"); /* Update this path as needed */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  padding: 20px;
+}
+.form-container {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-row input {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #0077b6;
+}
+
+.btns {
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btns:hover {
+  background-color: #005f8e;
+}
+
+@media (max-width: 768px) {
+  .input-row {
+      flex-direction: column;
+  }
+
+  .input-row input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
