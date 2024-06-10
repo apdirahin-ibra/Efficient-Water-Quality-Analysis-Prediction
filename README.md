@@ -5,27 +5,27 @@
 
 ### Home page
 
-<img src="../static/images/home.png" alt="Home Page"/>
+<img src="/static/images/home.png" alt="Home Page"/>
 
 ### Sign up page
 
-<img src="../static/images/signup.png" alt='signup'/>
+<img src="/static/images/singup.png" alt='signup'/>
 
 ### Sign in page
 
-<img src="../static/images/login.png" alt='signin'/>
+<img src="/static/images/login.png" alt='signin'/>
 
 ### prediction page
 
-<img src="../static/images/prediction.png" alt='prediction'/>
+<img src="/static/images/prediction.png" alt='prediction'/>
 
 ### result clean water page
 
-<img src="../static/images/clean water.png" alt='water clean'/>
+<img src="/static/images/clean water.png" alt='water clean'/>
 
 ### result dirty water page
 
-<img src="../static/images/dirty water.png" alt='water dirty'/>
+<img src="/static/images/dirty water.png" alt='water dirty'/>
 
 ---
 
